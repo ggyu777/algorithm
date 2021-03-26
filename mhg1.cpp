@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -7,7 +7,8 @@ using namespace std;
 int main() {
 	std::ios::sync_with_stdio(false);
 	int n1, n2, n3,max=0;
-	char v[50][1000] = { 0 };
+	char v[50][1000] = { 0 }; // 초기화~
+
 	string DNA;
 	cin >> n1;
 	for (int i = 0; i < n1; i++) {
@@ -15,10 +16,10 @@ int main() {
 		int res = 0;
 		char C[1001] = { 0 };
 		for (int j = 0; j < n2; j++) {
-			cin >>DNA;
+			cin >>DNA; // ???
 			for (int k = 0; k < n3; k++)
 			{
-				v[j][k]=DNA[k];
+				v[j][k]=DNA[k]; // ???
 			}
 		}
 
@@ -62,6 +63,5 @@ int main() {
 			}
 			cout << endl;
 			cout << res << endl;
-		res = 0;
 	}
 }
